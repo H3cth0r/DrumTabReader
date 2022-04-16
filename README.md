@@ -23,7 +23,7 @@ reduce time complexity. For this reason, for this solution, the output should on
 file with comma separated combinations, that will work as some kind of identificator(ID).
 The txt file tab output looks like this, using the example from the input file, the "T" is the separating line:
 ```
-CB, H, HS, H, HB, H, HS, H, T
+CB, -, H, HS, H, HB, H, HS, H, T
 ```
 This way, on the C# implementation of the videogame, we will create an ordered hash map, that will contain all the posible tab combinations as a key and as a value the method or operation that will generate some action on the videogame; this way, the time complexity for looking or generating some combination on the video game will be O(1).
 
