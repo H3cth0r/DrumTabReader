@@ -3,12 +3,12 @@
 
 int main(){
 
-   std::string file_path = "../txt_tabs/boys_dont_cry.txt";
+   std::string file_path = "../txt_tabs/paranoid.txt";
    Reader the_reader = Reader(file_path);
    //the_reader.print_vector();
    the_reader.translate_tabs();
    std::cout << the_reader.get_output_txt() << "\n";
-   the_reader.export_output_to_txt("../output_txt/boys_dont_cry.txt");
+   the_reader.export_output_to_txt("../output_txt/paranoid.txt");
 
 
     return 0;
