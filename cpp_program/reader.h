@@ -70,7 +70,7 @@ class Reader{
                     
                     // in case is "|" just break and add this
                     if(character_iterator == '|'){
-                        combinations_iterator += "T";
+                        // combinations_iterator += "T";
                         tab_title_index = 0;
                         break;
                     }
