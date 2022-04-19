@@ -85,8 +85,8 @@ class Reader{
                         tab_title_index = 0;
                     }else tab_title_index++;
                 }
-                if(empty_ocurrence == true && char_ocurrence==false) combinations_iterator = '-';
                 if(combinations_iterator.length() == 0) continue;
+                if(empty_ocurrence == true && char_ocurrence==false) combinations_iterator = '-';
                 output_txt += combinations_iterator + ",";
                 combinations_iterator = "";
                 empty_ocurrence = false;
