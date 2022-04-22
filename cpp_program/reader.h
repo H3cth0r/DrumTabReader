@@ -64,14 +64,14 @@ class Reader{
             bool        empty_ocurrence = false;
             bool        char_ocurrence  = false;
             int         tab_title_index = 0;
+            bool        tab_ocurrence = false;
             for(int i = 1; i < length_tabs; i++){
                 for(std::string j : input_txt){
                     character_iterator = j[i];
-                    
+
                     // in case is "|" just break and add this
                     if(character_iterator == '|'){
-                        // combinations_iterator += "T";
-                        tab_title_index = 0;
+                        tab_ocurrence = true;
                         break;
                     }
                     // in cse is '-', then set empty_ocurrence to true and continue
@@ -85,8 +85,8 @@ class Reader{
                         tab_title_index = 0;
                     }else tab_title_index++;
                 }
-                if(combinations_iterator.length() == 0) continue;
                 if(empty_ocurrence == true && char_ocurrence==false) combinations_iterator = '-';
+                if(combinations_iterator.length() == 0) continue;
                 output_txt += combinations_iterator + ",";
                 combinations_iterator = "";
                 empty_ocurrence = false;
@@ -102,4 +102,4 @@ class Reader{
 };
 
 
-#endif
+#endif READER 
